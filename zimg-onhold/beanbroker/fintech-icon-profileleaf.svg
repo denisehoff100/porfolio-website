@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="134" viewBox="0 0 134 134">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_263" data-name="Ellipse 263" cx="67" cy="67" r="67" fill="#87cb46"/>
+    </clipPath>
+  </defs>
+  <g id="Group_496" data-name="Group 496" transform="translate(-133 -169)">
+    <g id="Mask_Group_31" data-name="Mask Group 31" transform="translate(133 169)" clip-path="url(#clip-path)">
+      <circle id="Ellipse_262" data-name="Ellipse 262" cx="67" cy="67" r="67" fill="#87cb46"/>
+      <path id="Path_240" data-name="Path 240" d="M0,41.442S28.218-22.146,84.806,8.211a56.971,56.971,0,0,0,48.1,7.066S111.382,55.328,66.243,66.153,0,41.442,0,41.442Z" transform="translate(31.752 158.299) rotate(-115)" fill="#96c85a" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_242" data-name="Path 242" d="M0,27.834S18.952-14.874,56.958,5.515a38.264,38.264,0,0,0,32.307,4.746S74.808,37.16,44.491,44.43,0,27.834,0,27.834Z" transform="translate(50.789 99.83) rotate(-115)" fill="#96c85a" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_241" data-name="Path 241" d="M0,30.846s32.525,73.293,97.75,38.3c0,0,23.453-17.7,55.443-8.145,0,0-24.811-46.164-76.839-58.64S0,30.846,0,30.846Z" transform="translate(22.176 145.114) rotate(-65)" fill="#96c85a" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+    <g id="Group_337" data-name="Group 337" transform="translate(167.135 210.366)">
+      <text id="Add_photo" data-name="Add photo" transform="translate(31.865 47.634)" fill="#fff" font-size="13" font-family="SFProText-Regular, SF Pro Text" letter-spacing="0.006em"><tspan x="-32.126" y="0">Add photo</tspan></text>
+      <g id="Group_336" data-name="Group 336" transform="translate(19.398 0)">
+        <rect id="Rectangle" width="3.65" height="26.767" rx="1.5" transform="translate(11.558)" fill="#fff"/>
+        <rect id="Rectangle-2" data-name="Rectangle" width="3.65" height="26.767" rx="1.5" transform="translate(0 15.208) rotate(-90)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
