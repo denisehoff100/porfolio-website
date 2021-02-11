@@ -20,20 +20,43 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 1.55em;
+  font-weight: 300;
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #96C85A;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #88B9E6;
+}
+a:hover {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #F0C036;
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
 }
