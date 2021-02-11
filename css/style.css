@@ -41,15 +41,15 @@ img {
   width: 100%;
 }
 a {
-  color: #96C85A;
+  color: #88B9E6;
   text-decoration: none; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #88B9E6;
+  color: #0c0e30;
 }
 a:hover {
-  color: #cc6540;
+  color: #F0C036;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
@@ -63,16 +63,16 @@ a:focus {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #0c0e30;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  padding: 12px;
+  border-radius: 8px;
+  border-bottom: 2px solid #88B9E6; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.6; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 .button:active {
@@ -81,11 +81,10 @@ a:focus {
 }
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  color: #88B9E6;
+  border: 1px solid #88B9E6;
 }
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
+  opacity: 0.6; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
