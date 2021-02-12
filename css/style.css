@@ -6,7 +6,12 @@ Secondary Color (Green): #96C85A;
 (Dark Green): #6D9B40;
 Tertiary Color [Gold]: #F0C036;
 */
-
+header {
+  background-color: #ff44c4;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 40px 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
 body {
   background-color: #ffffff;
   font-family: 'Roboto Slab', serif;
@@ -20,21 +25,21 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.0em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.55em;
+  font-size: 1.4em;
   font-weight: 300;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 img {
@@ -88,3 +93,12 @@ a:focus {
   opacity: 0.6; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
