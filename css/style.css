@@ -33,11 +33,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
-  font-weight: 300;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
 }
 img {
@@ -107,6 +107,11 @@ nav > ul > li > a:active { /* selected link */
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
   text-align: center; /* Centers text */
@@ -144,7 +149,7 @@ nav > ul > li > a {
   padding: 5px 0;
   display: inline-block;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 #hero span {
   display: block;
@@ -161,24 +166,45 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
     font-size: 18px;
   }
-
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 0px;
+  }
+  main {
+    padding-top: 98px;
   }
   .col-md-6 {
   width: 50%;
 }
-
+body {
+    font-size: 18px; /* Sets the font size to 16px */
 }
+#about-page h3 { margin-top: 0;
+}
+
+}/* ==END Medium*/
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
 }
-
+  .col-lg-7 {
+    width: 58.33%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+    font-size: 20px; /* Sets the font size to 16px */
+}
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -186,4 +212,5 @@ X-large devices (1440px or larger)
 }
 [class*="col-"] {
   float: left;
+  padding: 10px 30px 10px 0px;
 }
