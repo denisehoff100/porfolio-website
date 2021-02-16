@@ -18,7 +18,10 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-
+footer {
+  background: #c4c4c4;
+  padding: 10px 0;
+}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -35,6 +38,7 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-weight: 500;
+  margin-top: 0;
 }
 h4 {
   font-size: 1em;
@@ -44,7 +48,7 @@ img {
   width: 100%;
 }
 a {
-  color: #88B9E6;
+  color: #00529F;
   text-decoration: none; /* No underlining */
 }
 
@@ -88,8 +92,8 @@ nav > ul > li > a:active { /* selected link */
 }
 .button.contact {
   background-color: transparent;
-  color: #88B9E6;
-  border: 1px solid #88B9E6;
+  color: #00529F;
+  border: 1px solid #00529F;
 }
 .button.contact:hover {
   opacity: 0.6; /* Reduces the opacity of the button to 60% */
@@ -99,10 +103,16 @@ nav > ul > li > a:active { /* selected link */
 .social a {
   display: inline-block;
   width: 50px;
+  padding-top: 20px;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
+}
+.about-photo {
+  max-width:200px;
+  display: block;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -182,7 +192,10 @@ body {
 }
 #about-page h3 { margin-top: 0;
 }
-
+[class*="col-"] {
+  float: left;
+  padding: 10px 30px 10px 0px;
+}
 }/* ==END Medium*/
 
 /* ==============================
@@ -192,7 +205,6 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 41.66%;
   }
-}
   .col-lg-7 {
     width: 58.33%;
 }
@@ -209,10 +221,6 @@ body {
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
-[class*="col-"] {
-  float: left;
-  padding: 10px 30px 10px 0px;
 }
 /*animation*/
 @keyframes color-change {
