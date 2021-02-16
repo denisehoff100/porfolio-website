@@ -126,7 +126,9 @@ nav > ul > li > a:active { /* selected link */
 #hero h1 {
   text-align: center; /* Centers text */
 }
-
+.user-profile {
+  max-width: 150px;
+}
 .logo {
   max-width: 250px;
 }
@@ -186,6 +188,9 @@ Medium devices (640px and larger)
   }
   .col-md-6 {
   width: 50%;
+}
+  .col-md-4 {
+  width: 33%;
 }
 body {
     font-size: 18px; /* Sets the font size to 18px */
