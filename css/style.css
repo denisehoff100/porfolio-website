@@ -130,7 +130,7 @@ nav > ul > li > a:active { /* selected link */
   max-width: 150px;
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 /* header */
 header {
@@ -178,6 +178,7 @@ Medium devices (640px and larger)
     padding: 50px 0 13px;
     font-size: 18px;
   }
+
   nav {
     width: auto;
     float: right;
@@ -191,6 +192,9 @@ Medium devices (640px and larger)
 }
   .col-md-4 {
   width: 33%;
+}
+.logo {
+  max-width: 250px;
 }
 body {
     font-size: 18px; /* Sets the font size to 18px */
