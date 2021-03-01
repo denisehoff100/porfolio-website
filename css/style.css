@@ -72,6 +72,7 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active { /* selected link */
   color: #F0C036;
 }
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #0c0e30;
@@ -135,8 +136,7 @@ nav > ul > li > a:active { /* selected link */
 /* header */
 header {
   background-color: #fbe198;
-  text-align: center;
-  padding: 20px 0px;
+  padding: 10px 0 8px;
   position: fixed;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
   -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.25);
@@ -146,10 +146,33 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
-  display: inline-block;
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
 nav > ul > li > a {
   padding: 0 20px;
   text-transform: uppercase;
@@ -167,7 +190,7 @@ nav > ul > li > a {
   display: block;
 }
 main {
-  padding-top: 135px;
+  padding-top: 44px;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -184,17 +207,29 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 0px;
   }
+  nav > ul {
+  margin: 1em 0;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
   main {
     padding-top: 120px;
   }
-  .col-md-6 {
+.col-md-6 {
   width: 50%;
 }
-  .col-md-4 {
+.col-md-4 {
   width: 33%;
 }
 .logo {
   max-width: 250px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
 }
 body {
     font-size: 18px; /* Sets the font size to 18px */
@@ -225,7 +260,14 @@ Large devices (1024px or larger)
 body {
     font-size: 20px; /* Sets the font size to 16px */
 }
+.navtoggle li:not(:last-child) {
+  display: inline-block;
 }
+.navtoggle li:last-child {
+  display: none;
+}
+}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
