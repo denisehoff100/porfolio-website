@@ -33,9 +33,12 @@ h1 {
 h2 {
   font-size: 1.6em;
   font-weight: 500;
-  background-color: #F9FBFE;
 }
-
+h2.altblue {
+  background-color: #F9FBFE;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
 h3 {
   font-size: 1.2em;
   font-weight: 500;
@@ -47,6 +50,22 @@ h4 {
 }
 img {
   width: 100%;
+}
+.resetsize {
+  width: auto;
+}
+.clear {
+  clear: both;
+  display: inline-block;
+}
+.clear::before {
+  content:'';
+  display: block;
+  width: 1px;
+  clear: both;
+}
+.center {
+  text-align: center;
 }
 a {
   color: #00529F;
@@ -192,6 +211,14 @@ nav > ul > li > a {
 }
 main {
   padding-top: 44px;
+}
+/* ==============================
+Projects Styles
+================================= */
+.plant {
+  margin: 0 auto;
+  display: block;
+  border: 0;
 }
 /* ==============================
 Medium devices (640px and larger)
