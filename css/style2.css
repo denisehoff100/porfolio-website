@@ -1,0 +1,332 @@
+/*
+Colors used:
+Primary Color (Blue): #00529F;
+(Light Blue): #88B9E6;
+Secondary Color (Green): #96C85A;
+(Dark Green): #6D9B40;
+Tertiary Color [Gold]: #F0C036;
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Jura', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.8; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+footer {
+  background: #c4c4c4;
+  padding: 10px 0;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.0em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+h2.altblue {
+  background-color: #F9FBFE;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 0;
+}
+h4 {
+  font-size: 1em;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+.resetsize {
+  width: auto;
+}
+.clear {
+  clear: both;
+  display: inline-block;
+}
+.clear::before {
+  content:'';
+  display: block;
+  width: 1px;
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+a {
+  color: #00529F;
+  text-decoration: none; /* No underlining */
+}
+
+
+a:hover {
+  color: #fcad03;
+}
+a:active { /* selected link */
+  color: #fcad03;
+}
+a:focus {
+  color: #cc6540;
+}
+nav > ul > li > a:hover {
+  color: #fcad03;
+}
+nav > ul > li > a:active { /* selected link */
+  color: #fcad03;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #fcad03;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 500;
+  font-size: .8em;
+  padding: 6px;
+  border-radius: 8px;
+  border-bottom: 2px solid ##707070; /* width of the border, type, color */
+  transition: 0.6s opacity;
+}
+.button:hover {
+  opacity: 0.6; /* Reduces the opacity of the button to 60% */
+  text-decoration: none;
+}
+.button:active {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #00529F;
+  border: 1px solid #00529F;
+}
+.button.contact:hover {
+  opacity: 0.6; /* Reduces the opacity of the button to 60% */
+  text-decoration: none;
+}
+/* footer styles */
+.social a {
+  display: inline-block;
+  width: 50px;
+  padding-top: 20px;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.about-photo {
+  max-width:200px;
+  display: block;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+#welcome h2 {
+  padding: 20px 0;
+}
+.user-profile {
+  max-width: 150px;
+}
+.logo {
+  max-width: 150px;
+}
+/* header */
+header {
+  background-color: #ffffff;
+  padding: 10px 0 8px;
+  position: fixed;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+nav > ul > li > a {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #fbe198;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+#hero span {
+  display: block;
+}
+
+main {
+  padding-top: 44px;
+}
+/* ==============================
+Projects Styles
+================================= */
+.animation-border {
+  margin: 0 auto;
+  display: block;
+  border: 0;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 50px 0 13px;
+    font-size: 18px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 0px;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+  main {
+    padding-top: 120px;
+  }
+.col-md-6 {
+  width: 50%;
+}
+.col-md-4 {
+  width: 33%;
+}
+.logo {
+  max-width: 250px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+body {
+    font-size: 18px; /* Sets the font size to 18px */
+}
+#about-page h3 { margin-top: 0;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px 30px 10px 0px;
+}
+}/* ==END Medium*/
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+    font-size: 20px; /* Sets the font size to 16px */
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+/*animation*/
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 3s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
