@@ -19,8 +19,12 @@ body {
   color: #4a4a4a;
 }
 footer {
-  background: #c4c4c4;
-  padding: 10px 0;
+  background: #fff1c9;
+  padding: 8px 0;
+}
+.copyright {
+  font-size: 50%;
+  align-content: center;
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -48,6 +52,14 @@ h4 {
   font-size: 1em;
   font-weight: 300;
 }
+.toolshead {
+  font-size: .7em;
+  margin-left: 70px;
+}
+.sidebar {
+  font-size: .7em;
+  margin-left: 60px;
+}
 img {
   width: 100%;
 }
@@ -68,53 +80,57 @@ img {
   text-align: center;
 }
 a {
-  color: #00529F;
+  color: #f89927;
   text-decoration: none; /* No underlining */
 }
 
-
 a:hover {
-  color: #F0C036;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #f89927;
+  font-weight: 500;
 }
 a:active { /* selected link */
   color: #F0C036;
+  font-weight: 500;
 }
 a:hover,
 a:focus {
-  color: #cc6540;
-  text-decoration: underline;
+  color: #f89927;
+  text-decoration: none; /* No underlining */
 }
 nav > ul > li > a:hover {
   color: #F0C036;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none; /* No underlining */
 }
 nav > ul > li > a:active { /* selected link */
   color: #F0C036;
+  text-decoration: none; /* No underlining */
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #0c0e30;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 12px;
-  border-radius: 8px;
-  border-bottom: 2px solid #88B9E6; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  background-color: #f89927;
+  color: #393939; /* needed to override the default link color */
+  font-weight: 500;
+  font-size: .7em;
+  padding: 8px;
+  border-radius: 6px;
+  border-bottom: 2px solid #c3781d; /* width of the border, type, color */
+  transition: 0.6s opacity;
 }
 .button:hover {
   opacity: 0.6; /* Reduces the opacity of the button to 60% */
+  color: #393939;
   text-decoration: none;
 }
 .button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #393939;
   text-decoration: none;
 }
 .button.contact {
   background-color: transparent;
-  color: #00529F;
-  border: 1px solid #00529F;
+  color: #f89927;
+  border: 1px solid #f89927;
 }
 .button.contact:hover {
   opacity: 0.6; /* Reduces the opacity of the button to 60% */
@@ -125,6 +141,7 @@ nav > ul > li > a:active { /* selected link */
   display: inline-block;
   width: 50px;
   padding-top: 20px;
+  padding-right: 10px
 }
 
 /* Layout styling */
@@ -143,7 +160,9 @@ nav > ul > li > a:active { /* selected link */
   clear: both;
   display: table;
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
 #hero h1 {
   text-align: center; /* Centers text */
 }
@@ -153,9 +172,10 @@ nav > ul > li > a:active { /* selected link */
 .logo {
   max-width: 150px;
 }
+
 /* header */
 header {
-  background-color: #fbe198;
+  background-color: #fff1c9;
   padding: 10px 0 8px;
   position: fixed;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
@@ -167,6 +187,10 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+.period {
+  font-size: 150%;
+  color: orange;
 }
 .navtoggle li .icon {
   position: absolute;
@@ -200,7 +224,7 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 #hero {
-  background-color: #fbe198;
+  background-color: #ffffff;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
@@ -209,10 +233,10 @@ nav > ul > li > a {
 #hero span {
   display: block;
 }
-
 main {
   padding-top: 44px;
 }
+
 /* ==============================
 Projects Styles
 ================================= */
@@ -222,6 +246,18 @@ Projects Styles
   border: 0;
 }
 /* ==============================
+Small devices (640px and smaller)
+================================= */
+@media only screen and (max-width: 640px) {
+.col-sm-4 {
+    width: 33.33%;
+    }
+  }
+/* ==============================
+Small devices (640px and smaller)
+
+================================= */
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
@@ -230,7 +266,6 @@ Medium devices (640px and larger)
     padding: 50px 0 13px;
     font-size: 18px;
   }
-
   nav {
     width: auto;
     float: right;
@@ -245,11 +280,20 @@ Medium devices (640px and larger)
   main {
     padding-top: 120px;
   }
-.col-md-6 {
-  width: 50%;
-}
+.col-md-3 {
+      width: 25%;
+      }
 .col-md-4 {
-  width: 33%;
+    width: 33.33%;
+    }
+.col-md-5 {
+    width: 41.66%;
+  }
+.col-md-6 {
+    width: 50%;
+    }
+.col-md-7 {
+    width: 58.33%;
 }
 .logo {
   max-width: 250px;
@@ -275,11 +319,11 @@ body {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
+.col-lg-4 {
+    width: 33.33%;
+    }
+.col-lg-8 {
+    width: 66.66%;
 }
 .container {
   max-width: 1200px;
@@ -289,6 +333,7 @@ Large devices (1024px or larger)
 body {
     font-size: 20px; /* Sets the font size to 16px */
 }
+
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }

@@ -12,7 +12,7 @@ Tertiary Color [Gold]: #F0C036;
 }
 body {
   background-color: #ffffff;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.8; /* Sets the line-height to 1.6 * the font-size */
@@ -29,7 +29,6 @@ h1 {
   font-size: 2.0em;
   font-weight: 700;
 }
-
 h2 {
   font-size: 1.6em;
   font-weight: 500;
@@ -41,7 +40,7 @@ h2.altblue {
 }
 h3 {
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 300;
   margin-top: 0;
 }
 h4 {
@@ -140,9 +139,9 @@ nav > ul > li > a:active { /* selected link */
   clear: both;
   display: table;
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row { padding-bottom: 15px; border-bottom: 1px solid #4a4a4a; }
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: left;
 }
 #welcome h2 {
   padding: 20px 0;
@@ -153,11 +152,19 @@ nav > ul > li > a:active { /* selected link */
 .logo {
   max-width: 150px;
 }
+.period {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fcad03;
+}
 /* header */
 header {
   background-color: #ffffff;
-  padding: 10px 0 8px;
+  padding: 10px 0 10px;
   position: fixed;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+  box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.25);
   width: 100%;
 }
 nav > ul {
@@ -167,8 +174,8 @@ nav > ul {
 }
 .navtoggle li .icon {
   position: absolute;
-  padding-right: 0;
-  right: 0;
+  padding-left: 0;
+  left: 0;
   top: 2px;
   font-size: 20px;
 }
@@ -197,7 +204,7 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 #hero {
-  background-color: #fbe198;
+  background-color: #E9EBDE;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
@@ -206,7 +213,13 @@ nav > ul > li > a {
 #hero span {
   display: block;
 }
-
+#signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.0em;
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
 main {
   padding-top: 44px;
 }
@@ -230,7 +243,7 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right;
+    float: left;
     margin-top: 0px;
   }
   nav > ul {
@@ -299,6 +312,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
+
 /*animation*/
 @keyframes color-change {
   0% {fill: #edc655;}
