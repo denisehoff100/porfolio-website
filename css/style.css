@@ -1,17 +1,13 @@
 /*
 Colors used:
-Primary Color (Blue): #00529F;
-(Light Blue): #88B9E6;
-Secondary Color (Green): #96C85A;
-(Dark Green): #6D9B40;
-Tertiary Color [Gold]: #F0C036;
+
 */
 
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #ffffff;
+  background-color: #fcf9f2;
   font-family: 'Roboto Slab', serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -30,12 +26,12 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.0em;
+  font-size: 1.8em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 h2.altblue {
@@ -52,6 +48,13 @@ h4 {
   font-size: 1em;
   font-weight: 300;
 }
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: .8em;
+  font-weight: 100;
+}
 .toolshead {
   font-size: .7em;
   margin-left: 70px;
@@ -62,6 +65,7 @@ h4 {
 }
 img {
   width: 100%;
+  border-radius: 6px;
 }
 .resetsize {
   width: auto;
@@ -86,7 +90,7 @@ a {
 
 a:hover {
   color: #f89927;
-  font-weight: 500;
+  font-weight: 300;
 }
 a:active { /* selected link */
   color: #F0C036;
@@ -106,36 +110,45 @@ nav > ul > li > a:active { /* selected link */
   text-decoration: none; /* No underlining */
 }
 
+.button-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0px;
+  margin-top: 50px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  background-color: white;
+}
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #f89927;
-  color: #393939; /* needed to override the default link color */
-  font-weight: 500;
-  font-size: .7em;
-  padding: 8px;
-  border-radius: 6px;
-  border-bottom: 2px solid #c3781d; /* width of the border, type, color */
-  transition: 0.6s opacity;
+  display: block;
+  width: 100%;
+  max-width: 12000px;
+  height: 80px;
+  margin: 30px 30px;
+  margin-left: 0px;
+  color: #464B56;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #E3E7EC;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 .button:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 60% */
-  color: #393939;
-  text-decoration: none;
+  border: 1px transparent;
+  cursor: pointer;
+  background-color: #fff1c9;
+  -webkit-box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
+  -moz-box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
+  box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
 }
-.button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  color: #393939;
-  text-decoration: none;
-}
-.button.contact {
-  background-color: transparent;
-  color: #f89927;
-  border: 1px solid #f89927;
-}
-.button.contact:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 60% */
-  text-decoration: none;
-}
+
 /* footer styles */
 .social a {
   display: inline-block;
@@ -160,6 +173,7 @@ nav > ul > li > a:active { /* selected link */
   clear: both;
   display: table;
 }
+
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
@@ -175,13 +189,14 @@ nav > ul > li > a:active { /* selected link */
 
 /* header */
 header {
-  background-color: #fff1c9;
+  background-color: #fff9e8;
   padding: 10px 0 8px;
   position: fixed;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-  -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-  box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.25);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(25, 25, 25, 0.05);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(25, 25, 25, 0.05);
+  box-shadow:         0px 5px 5px 0px rgba(25, 25, 25, 0.05);
   width: 100%;
+  z-index: 1;
 }
 nav > ul {
   list-style-type: none;
@@ -237,7 +252,7 @@ main {
   padding-top: 44px;
 }
 
-/* ==============================
+
 Projects Styles
 ================================= */
 .animation-border {
@@ -245,6 +260,7 @@ Projects Styles
   display: block;
   border: 0;
 }
+
 /* ==============================
 Small devices (640px and smaller)
 ================================= */
@@ -252,11 +268,11 @@ Small devices (640px and smaller)
 .col-sm-4 {
     width: 33.33%;
     }
-  }
-/* ==============================
-Small devices (640px and smaller)
+.row-reverse {
+    float: right;
+    }
+}
 
-================================= */
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
