@@ -173,7 +173,13 @@ nav > ul > li > a:active { /* selected link */
   clear: both;
   display: table;
 }
-
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
 #work .row {
   padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
