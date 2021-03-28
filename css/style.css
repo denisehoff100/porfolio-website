@@ -34,10 +34,10 @@ h2 {
   font-size: 1.5em;
   font-weight: 500;
 }
-h2.altblue {
+h2.space {
   background-color: #F9FBFE;
   margin-bottom: 0;
-  padding: 10px 0;
+  padding: 80px 0px 0px;
 }
 h3 {
   font-size: 1.2em;
@@ -66,6 +66,11 @@ h6 {
 img {
   width: 100%;
   border-radius: 6px;
+}
+.shadow {
+  box-shadow: 1px -1px 5px -1px rgba(0,0,0,0.31);
+  -webkit-box-shadow: 1px -1px 5px -1px rgba(0,0,0,0.31);
+  -moz-box-shadow: 1px -1px 5px -1px rgba(0,0,0,0.31);
 }
 .resetsize {
   width: auto;
@@ -122,19 +127,19 @@ nav > ul > li > a:active { /* selected link */
 .button {
   display: block;
   width: 100%;
-  max-width: 12000px;
   height: 80px;
+  padding: 30px 30px;
   margin: 30px 30px;
   margin-left: 0px;
   color: #464B56;
-  background-color: white;
+  background-color: fff4d9;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
   border: 1px solid #E3E7EC;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -144,9 +149,9 @@ nav > ul > li > a:active { /* selected link */
   border: 1px transparent;
   cursor: pointer;
   background-color: #fff1c9;
-  -webkit-box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
-  -moz-box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
-  box-shadow: 0px 15px 30px 7px rgba(227, 231, 236, 1);
+  -webkit-box-shadow: 0px 15px 15px 0px rgba(227, 231, 236, 1);
+  -moz-box-shadow: 0px 15px 15px 0px rgba(227, 231, 236, 1);
+  box-shadow: 0px 15px 30px 0px rgba(227, 231, 236, 1);
 }
 
 /* footer styles */
@@ -166,7 +171,7 @@ nav > ul > li > a:active { /* selected link */
   display: block;
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 45px 0; /* 25px top and bottom, 0 left and right */
 }
 .row::after {
   content: "";
@@ -191,6 +196,49 @@ grid-row-gap: 10px;
 }
 .logo {
   max-width: 150px;
+}
+/* contact form */
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* header */
@@ -257,9 +305,17 @@ nav > ul > li > a {
 main {
   padding-top: 44px;
 }
+.hero-text {
+  background: url('../img/welcome/pinkshirt-coverswirl.png') no-repeat top right;
+  background-size: 100%;
+  padding: 30px 0px;
+  min-height: 600px;
+}
+.hero-text-inside {
+  max-width: 500px;
+}
 
-
-Projects Styles
+/*Projects Styles
 ================================= */
 .animation-border {
   margin: 0 auto;
@@ -273,9 +329,6 @@ Small devices (640px and smaller)
 @media only screen and (max-width: 640px) {
 .col-sm-4 {
     width: 33.33%;
-    }
-.row-reverse {
-    float: right;
     }
 }
 
@@ -335,7 +388,18 @@ body {
   float: left;
   padding: 10px 30px 10px 0px;
 }
-}/* ==END Medium*/
+.row-reverse [class*="col-"] {
+    float: right;
+    }
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+}
+/* ==END Medium*/
 
 /* ==============================
 Large devices (1024px or larger)
