@@ -325,7 +325,7 @@ main {
   background: url('../img/welcome/pinkshirt-coverswirl.png') no-repeat top right;
   background-size: 100%;
   padding: 30px 0px;
-  min-height: 600px;
+  min-height: 300px;
 }
 
 .hero-text-inside {
