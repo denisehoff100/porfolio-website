@@ -39,7 +39,118 @@ footer {
   text-align: center;
   padding-left: 30px;
 }
+/* start code pen click me */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: #e6f5ff;
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #99d6ff;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+/* end click me */
+
+/* start code pen pop up icons */
+.pop-up{
+  margin-top:20%;
+  list-style-type: none;
+}
+
+.pop-up > * {
+  width: 4em;
+  height: 4em;
+
+}
+.pop-up > *:hover{
+  animation-name: popupAnim;
+  animation-duration: 1s;
+}
+
+@keyframes popupAnim {
+    0% {transform: scale(1);}
+    50% {transform: scale(2.5);}
+    100% {transform: scale(1);}
+}
+/* end pop up icons */
+/* start code pen liquid button */
+
+.button {
+  position: relative;
+  padding: 1.6em 2.8em;
+  text-decoration: none;
+}
+.button__canvas {
+  --offset: 32px;
+  position: absolute;
+  top: calc(var(--offset) * -1);
+  left: calc(var(--offset) * -1);
+  width: calc(100% + var(--offset) * 2);
+  height: calc(100% + var(--offset) * 2);
+  transition: opacity 2s ease;
+}
+.button__text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+.button:hover .button__canvas {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+.button:active .button__canvas {
+  opacity: 1;
+  transition: none;
+}
+/* end code pen liquid button */
 a {
   color: #f89927;
   text-decoration: none;
