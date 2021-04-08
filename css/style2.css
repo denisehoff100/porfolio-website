@@ -8,7 +8,7 @@ Colors used:
 }
 body {
   background-color: #fcf9f2;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -22,7 +22,8 @@ footer {
   font-size: 50%;
   align-content: center;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
   line-height: 1.4;
 }
 h1 {
@@ -195,7 +196,7 @@ grid-row-gap: 10px;
 
 /* header */
 header {
-  background-color: #fff9e8;
+  background: linear-gradient(to bottom, #000, #fcf9f2);
   padding: 10px 0 8px;
   position: fixed;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(25, 25, 25, 0.05);
