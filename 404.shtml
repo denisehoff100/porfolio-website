@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://kit.fontawesome.com/afec5bbe92.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Denise Hoff Portfolio</title>
+  <link href="img/general/favicon-dh.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <main>
+
+    <div class="container">
+      <!--beginning neo blob code pen-->
+      <div class="position">
+        <div class="outer-cab">
+          <div class="inner-cab">
+            <div class="split-a">
+              <div class="split-b"></div>
+            </div>
+          </div>
+        </div>
+        <div class="outer-frame">
+          <div class="frame"> <label class="toggleBtn" for="check">
+
+              <div class="circle"></div>
+              <div class="grid">
+
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+
+              </div>
+
+          </div>
+        </div>
+
+        </label>
+
+
+        <input id="check" type="checkbox">
+        <div class="card">
+          <div class="blob stuck">Help, I'm stuck!
+          <a href="https://www.denisehoff.com/index.html"><br><img src="img/welcome/dh-logo-tiny.png"></a><br>Click me!</div>
+          <!--   <div class="shelf"></div> -->
+        </div>
+        <!-- <label for="toggleA"></label>
+        <input type="checkbox" id="toggleA">
+        <div class="a">1</div>
+
+        <label for="toggleB"></label>
+        <input type="checkbox" id="toggleB">
+        <div class="b">2</div>
+
+        <label for="toggleC"></label>
+        <input type="checkbox" id="toggleC">
+        <div class="c">3</div> -->
+
+        <!-- <div class="prize"></div> -->
+
+      <!--end code pen-->
+</div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

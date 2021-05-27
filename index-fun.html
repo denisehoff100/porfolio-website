@@ -28,6 +28,7 @@
             <li><a href="contact.html" target="_self">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
+
         </nav>
       </div>
     </div>
@@ -54,6 +55,7 @@
       </div>
     </div>
     <!-- end click me -->
+
     <!-- start pop up icon -->
     <div class="container">
       <center>
@@ -74,24 +76,64 @@
 
     </div>
     <!-- end pop up icon -->
-<div class="container">
-  <!--start code pen liquid button https://codepen.io/electerious/pen/gOOLgjd-->
-  <a href="#" class="button">
-<canvas class="button__canvas"></canvas>
-<span class="button__text">Hover me I am liquid</span>
-</a>
-<!--end code pen liquid button-->
-</div>
-
-
-  </div>
-</div>
+    <div class="container">
+      <!--start code pen liquid button https://codepen.io/electerious/pen/gOOLgjd-->
+      <a href="#" class="button">
+        <canvas class="button__canvas"></canvas>
+        <span class="button__text">Hover me I am liquid</span>
+      </a>
+      <!--end code pen liquid button-->
+    </div>
+    <!-- start code pen accessible image -->
+    <div class="c-compare" style="--value:50%;">
+      <img class="c-compare__left" src="img/beanbroker/cover_beanbroker_1200px.jpg" alt="Color" />
+      <img class="c-compare__right" src="img/beanbroker/cover_beanbroker-bw_600px.jpg" alt="B/W" />
+      <input type="range" class="c-rng c-compare__range" min="0" max="100" value="50" oninput="this.parentNode.style.setProperty('--value', `${this.value}%`)" />
+    </div>
+    <!-- end code pen accessible image -->
+    </div>
+    </div>
+    <!-- start liquid loader circle -->
+    <div>
+      <svg class="gegga">
+        <defs>
+          <filter id="gegga">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="inreGegga" />
+            <feComposite in="SourceGraphic" in2="inreGegga" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <svg class="snurra" width="200" height="200" viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="linjärGradient">
+            <stop class="stopp1" offset="0" />
+            <stop class="stopp2" offset="1" />
+          </linearGradient>
+          <linearGradient y2="160" x2="160" y1="40" x1="40" gradientUnits="userSpaceOnUse" id="gradient" xlink:href="#linjärGradient" />
+        </defs>
+        <path class="halvan"
+          d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64" />
+        <circle class="strecken" cx="100" cy="100" r="64" />
+      </svg>
+      <svg class="skugga" width="200" height="200" viewBox="0 0 200 200">
+        <path class="halvan"
+          d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64" />
+        <circle class="strecken" cx="100" cy="100" r="64" />
+      </svg>
+      <!-- end liquid loader circle -->
+    </div>
+    <div>
+    </div>
   </main>
 
   <!--Footer-->
   <footer id="contact">
     <div class="container">
-
+      <div>
+        <h1>Hover Me</h1>
+      </div>
+      <div style="padding-top: 10px; display: inline-block; max-width: 100px"><span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=3nQ16WLaNtAMiqT6ML1LazvyvCRuEMdJu3pr9BS0lTBvdJ2o7bwm1gpz56QE"></script></span></div>
 
     </div>
   </footer>
